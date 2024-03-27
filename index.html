@@ -1,0 +1,30 @@
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="main.css" rel="stylesheet">
+	<title>Aircraft Log by Tail Number</Title>
+</head>
+<body>
+	<h1>Aircraft Log by Tail Number</h1>
+	<h3>Select Airline for fleet details</h3>
+	<p>
+		<div>
+			<img src="QantasTail.png" alt="Qantas Tail">
+			<a href="qantas.html">Qantas Aircraft</a>
+		</div>
+		<div>
+			<img src="VATail.jpg" alt="VA Tail">
+			<a onclick="alertDNE()">Virgin Australia Aircraft</a>
+
+		</div>
+		<div>
+			<img src="JetstarTail.jpg" alt="Jetstar Tail">
+			<a onclick="alertDNE()">Jetstar Aircraft</a>
+		</div>	
+<script>
+function alertDNE() {
+  alert("The selected aircraft database does not yet exist");
+}
+</script>
+	</p>
+	
+</body>

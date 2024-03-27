@@ -1,0 +1,763 @@
+<head>
+	<link href="main.css" rel="stylesheet">
+	<title>Qantas Aircraft</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<header>
+		
+		<a href="index.html" id="home2"><img id="home" width="15px" height="15px" src="Home.png" alt="Home"></a>
+		<a href="index.html" id="home2"><img id="home" width="15px" height="15px" src="Back.png" alt="Home"></a>
+		<h3 id="ADBTitle"><span>A</span>ircraft<span>D</span>ata<span>B</span>ase</h3>
+		<hr>
+	</header>
+	<h1>Qantas Aircraft List</h1>
+	<input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search Tail Number...">
+	<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchBar");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aircraftList");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+	<p id="clickHead">Click headers to sort table. Aircraft currently with history pages will filter first.</p>
+<table id="aircraftList">
+    <tr>
+        <th onclick="sortTable(0)">Tail Number</th>
+        <th onclick="sortTable(1)">Type</td>
+        <th onclick="sortTable(2)">Seatback IFE</th>
+        <th onclick="sortTable(3)">Manufacture Year </th>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-XZA.html">VH-XZA</a></td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-XZB.html">VH-XZB</a></td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td>VH-XZC</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td>VH-XZD</td>
+        <td>Boeing 737-838</td> 
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZE</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZF</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZG</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZH</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZI</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZJ</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZK</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2013 </td>
+    </tr>
+    <tr>
+        <td>VH-XZL</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2014 </td>
+    </tr>
+    <tr>
+        <td>VH-XZM</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2014 </td>
+    </tr>
+    <tr>
+        <td>VH-XZN</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2014 </td>
+    </tr>
+    <tr>
+        <td>VH-XZO</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2014 </td>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-XZP.html">VH-XZP</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2014 </td>
+    </tr>
+    <tr>
+        <td>VH-VXA</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-VXB</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-VXC</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+	<tr>
+        <td>VH-VXD</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXE</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXF</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXG</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXH</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXI</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXJ</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXK</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXL</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXM</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXN</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXO</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>VH-VXP</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VXQ</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VXR</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VXS</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VXT</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VXU</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>VH-VYA</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>VH-VYB</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2004</td>
+    </tr>
+	  <tr>
+        <td>VH-VYC</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2004 </td>
+    </tr>
+    <tr>
+        <td>VH-VYD</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2005 </td>
+    </tr>
+    <tr>
+        <td>VH-VYE</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2005 </td>
+    </tr>
+    <tr>
+        <td>VH-VYF</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2005 </td>
+    </tr>
+    <tr>
+        <td>VH-VYG</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2005 </td>
+    </tr>
+    <tr>
+        <td>VH-VYH</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2005 </td>
+    </tr>
+    <tr>
+        <td>VH-VYI</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2006 </td>
+    </tr>
+    <tr>
+        <td>VH-VYJ</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2006 </td>
+    </tr>
+    <tr>
+        <td>VH-VYK</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2006 </td>
+    </tr>
+    <tr>
+        <td>VH-VYL</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2006 </td>
+    </tr>
+    <tr>
+        <td>VH-VYZ</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZA</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2008 </td>
+    </tr>
+    <tr>
+        <td>VH-VZB</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2008 </td>
+    </tr>
+    <tr>
+        <td>VH-VZC</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2008 </td>
+    </tr>
+    <tr>
+        <td>VH-VZD</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2008 </td>
+    </tr>
+    <tr>
+        <td>VH-VZE</td>
+        <td>Boeing 737-838</td>
+        <td>No</td>
+        <td>2008 </td>
+    </tr>
+    <tr>
+        <td>VH-VZF</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2009 </td>
+    </tr>
+    <tr>
+        <td>VH-VZG</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2009 </td>
+    </tr>
+    <tr>
+        <td>VH-VZH</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2009 </td>
+    </tr>
+    <tr>
+        <td>VH-VZI</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2010 </td>
+    </tr>
+	<tr>
+        <td>VH-VZJ</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2010 </td>
+    </tr>
+    <tr>
+        <td>VH-VZK</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2010 </td>
+    </tr>
+    <tr>
+        <td>VH-VZL</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZM</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZO</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZP</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZQ</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZR</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZS</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZT</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZU</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZV</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZW</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2011 </td>
+    </tr>
+    <tr>
+        <td>VH-VZX</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td>VH-VZY</td>
+        <td>Boeing 737-838</td>
+        <td>Yes</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-EBA.html">VH-EBA</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-EBB</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-EBC</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-EBD</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2002 </td>
+    </tr>
+    <tr>
+        <td>VH-EBG</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2007 </td>
+    </tr>
+	<tr>
+        <td>VH-EBJ</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2008</td>
+    </tr>
+    <tr>
+        <td>VH-EBK</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2008</td>
+    </tr>
+    <tr>
+        <td>VH-EBL</td>
+        <td>Airbus A330-202/3</td>
+        <td>No</td>
+        <td>2008</td>
+    </tr>
+    <tr>
+        <td>VH-EBM</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2009</td>
+    </tr>
+    <tr>
+        <td>VH-EBN</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2010</td>
+    </tr>
+    <tr>
+        <td>VH-EBO</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2010</td>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-EBP.html">VH-EBP</a></td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2010</td>
+    </tr>
+    <tr>
+        <td>VH-EBQ</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2014</td>
+    </tr>
+    <tr>
+        <td>VH-EBR</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2014</td>
+    </tr>
+    <tr>
+        <td>VH-EBS</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2013</td>
+    </tr>
+    <tr>
+        <td>VH-EBV</td>
+        <td>Airbus A330-202/3</td>
+        <td>Yes</td>
+        <td>2012</td>
+    </tr>
+    <tr>
+        <td><a id="XZA"href="VH-ZNA.html">VH-ZNA</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2017</td>
+    </tr>
+    <tr>
+        <td>VH-ZNB</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2017</td>
+    </tr>
+    <tr>
+        <td>VH-ZNC</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZND</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZNE</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZNF</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZNG</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZNH</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>VH-ZNI</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2019</td>
+    </tr>
+	<tr>
+        <td>VH-ZNJ</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2019</td>
+    </tr>
+    <tr>
+        <td>VH-ZNK</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2019</td>
+    </tr>
+    <tr>
+        <td>VH-ZNL</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2020</td>
+    </tr>
+    <tr>
+        <td>VH-ZNM</td>
+        <td>Boeing 787-9</td>
+        <td>Yes</td>
+        <td>2020</td>
+    </tr>
+    <tr>
+        <td>VH-QPA</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>VH-QPB</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>VH-QPC</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>VH-QPD</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>VH-QPE</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2005</td>
+    </tr>
+    <tr>
+        <td>VH-QPF</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2005</td>
+    </tr>
+    <tr>
+        <td>VH-QPG</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2005</td>
+    </tr>
+    <tr>
+        <td>VH-QPH</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2006</td>
+    </tr>
+    <tr>
+        <td>VH-QPI</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2006</td>
+    </tr>
+    <tr>
+        <td>VH-QPJ</td>
+        <td>Airbus A330-303</td>
+        <td>Yes</td>
+        <td>2006</td>
+    </tr>
+</table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("aircraftList");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</body>
